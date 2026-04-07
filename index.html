@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Gerenciador de Projetos</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #121214; color: #fff; padding: 40px; }
+        .container { max-width: 600px; margin: auto; background: #202024; padding: 20px; border-radius: 8px; }
+        input, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 4px; border: none; }
+        button { background: #00875f; color: white; cursor: pointer; font-weight: bold; }
+        button:hover { background: #00b37e; }
+        .projeto-card { background: #323238; padding: 10px; margin-top: 10px; border-radius: 4px; border-left: 4px solid #00b37e; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🚀 Cadastrar Novo Projeto</h2>
+    <form id="projetoForm">
+        <input type="text" id="cliente" placeholder="Nome do Cliente" required>
+        <input type="text" id="servico" placeholder="Tipo de Serviço (Ex: Landing Page)" required>
+        <input type="number" id="valor" placeholder="Valor (R$)" required>
+        <button type="submit">Salvar no MongoDB</button>
+    </form>
+
+    <div id="listaProjetos">
+        </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
